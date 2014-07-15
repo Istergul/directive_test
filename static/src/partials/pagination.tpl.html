@@ -1,0 +1,11 @@
+<div class="pagination">
+    <li data-ng-class="{disabled: noPrevious()}">
+        <a data-ng-click="selectPrevious()">Previous</a>
+    </li>
+    <li data-ng-repeat="page in pages" data-ng-class="{active: isActive(page)}">
+        <a data-ng-click="selectPage(page)">[[page]]</a>
+    </li>
+    <li data-ng-class="{disabled: noNext()}">
+        <a data-ng-click="selectNext()">Previous</a>
+    </li>
+</div>

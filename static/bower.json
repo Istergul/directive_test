@@ -1,0 +1,23 @@
+{
+  "name": "GrandCapitalProject",
+  "version": "0.0.1",
+  "description": "grand capital project",
+  "keywords": [
+    "test"
+  ],
+  "authors": [
+    "Istergul"
+  ],
+  "license": "Proprietary Software",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.0",
+    "angular-cookies": "~1.3.0",
+    "angular-route": "~1.3.0",
+    "angular-resource": "~1.3.0",
+    "bootstrap": "latest",
+    "angular-ui": "~0.4.0",
+    "angular-mocks": "~1.3.0"
+  }
+}
