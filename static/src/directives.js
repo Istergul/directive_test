@@ -2,7 +2,7 @@
 
 angular.module('app.directives', [])
 
-.directive('pagination', function() {
+.directive('pagination', function($templateCache) {
     return {
         restrict: "E",
         scope: {
@@ -10,7 +10,7 @@ angular.module('app.directives', [])
             currentPage: "=",
             onSelectPage: "&"
         },
-        templateUrl: 'static/src/partials/pagination.tpl.html',
+        templateUrl: 'src/partials/pagination.tpl.html',
         replace: true,
         link: function(scope) {
             scope.$watch('numPages', function(value) {
@@ -50,4 +50,3 @@ angular.module('app.directives', [])
         }
     };
 });
-;

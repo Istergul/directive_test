@@ -10,8 +10,8 @@ var module = angular.module('app', [
 ])
 
 .config(["$interpolateProvider", function($interpolateProvider){
-    $interpolateProvider.startSymbol('[[');
-    $interpolateProvider.endSymbol(']]');
+    $interpolateProvider.startSymbol('//');
+    $interpolateProvider.endSymbol('//');
 }])
 
 .config(["$locationProvider", function ($locationProvider) {
