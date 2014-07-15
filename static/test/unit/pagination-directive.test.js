@@ -5,11 +5,8 @@ describe('Directive pagination test', function () {
         element,
         lis;
 
-//    beforeEach(inject(function ($httpBackend) {
-//        $httpBackend.whenGET(/.*/).passThrough();
-//    }));
-    beforeEach(angular.mock.module('app.directives'));
     beforeEach(angular.mock.module('templates'));
+    beforeEach(angular.mock.module('app.directives'));
     beforeEach(inject(function (_$rootScope_, _$compile_) {
         $rootScope = _$rootScope_;
         $compile = _$compile_;
@@ -25,7 +22,7 @@ describe('Directive pagination test', function () {
 
     it('has the number of the page as text in each page item', function() {
         for (var i=1; i<=$rootScope.numPages; i++) {
-            expect(lis().eq(i).text()).toEqual(''+i);
+            expect(lis().eq(i).text().trim()).toEqual(''+i);
         }
     });
 
